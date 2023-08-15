@@ -19,16 +19,24 @@
             text-decoration: line-through;
             color: #999;
         }
+        body {
+            background: url(https://images.pexels.com/photos/913116/pexels-photo-913116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)
+        no-repeat fixed center top;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        }
     </style>
   </head>
-  <body class="flex justify-center items-center h-screen bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+  <body class="flex justify-center items-center h-screen">
     <!--Center Screen-->
     <div
-      class="bg-white opacity-85 p-8 w-[350px] md:w-[600px] lg:w-[800px] justify-center items-center rounded"
+      class="bg-white opacity-90 p-8 w-[350px] md:w-[600px] lg:w-[800px] justify-center items-center rounded"
     >
       <!-- Title-->
       <h1
-        class="uppercase font-bold text-center text-xl md:text-2xl lg:text-4xl bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text"
+        class="uppercase font-bold text-center text-xl md:text-2xl lg:text-4xl bg-gradient-to-r from-cyan-500 to-blue-500 text-transparent bg-clip-text"
       >
         Todolist
       </h1>
@@ -38,10 +46,10 @@
           type="text"
           id="todoInput"
           placeholder="Todo Giriniz..."
-          class="w-[350px] md:w-[600px] lg:w-[800px] bg-transparent border-b border-black border-opacity-50 focus:outline-none transition duration-500 custom-placeholder placeholder:text-black"
+          class="w-[350px] md:w-[600px] lg:w-[800px] bg-transparent border-b border-black border-opacity-90 focus:outline-none transition duration-500 custom-placeholder placeholder:text-black placeholder:opacity-50"
         />
         <button onclick="addTodo()"
-          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ml-2"
+          class="bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-black text-white font-bold py-2 px-4 rounded ml-2"
         >
           <i class="fa-solid fa-plus"></i>
         </button>
