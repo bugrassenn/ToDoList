@@ -33,16 +33,16 @@ function addTodoToList(todo) {
   li.style.display = "flex";
   li.innerHTML = `
                 <span class="flex-1 overflow-hidden whitespace-nowrap truncate border-b border-black border-opacity-20" title="${todo.text}">${todo.text}</span>
-                <button onClick = "toggleComplete(${todo.id})" class="bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-black text-white font-bold px-2 py-1 rounded ml-2">
+                <button onClick = "toggleComplete(${todo.id})" class="bg-gradient-to-r from-cyan-500 to-blue-500 text-xs lg:text-xl hover:text-black text-white font-bold px-2 py-1 rounded ml-2">
                     <i class="fa-solid fa-check"></i>
                 </button>
-                <button onClick = "editTodo(${todo.id})" class="bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-black text-white font-bold px-2 rounded ml-2">
+                <button onClick = "editTodo(${todo.id})" class="bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-black text-xs lg:text-xl text-white font-bold px-2 rounded ml-2">
                     <i class="fa-solid fa-pen-to-square"></i>
                 </button>
-                <button OnClick = "removeTodo(${todo.id})"class="bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-black text-white font-bold px-2 rounded ml-2">
+                <button OnClick = "removeTodo(${todo.id})"class="bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-black text-xs lg:text-xl text-white font-bold px-2 rounded ml-2">
                 <i class="fa-solid fa-trash"></i>
                 </button>
-                <button OnClick = "Info(${todo.id})" class="bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-black text-white font-bold px-2 rounded ml-2">
+                <button OnClick = "Info(${todo.id})" class="bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-black text-xs lg:text-xl text-white font-bold px-2 rounded ml-2">
                 <i class="fa-solid fa-circle-info"></i>
                 </button>
     `;
