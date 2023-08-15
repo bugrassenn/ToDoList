@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TodoList</title>
+    <!--Tailwind-Css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+        .completed {
+            text-decoration: line-through;
+            color: #999;
+        }
+    </style>
+  </head>
+  <body class="flex justify-center items-center h-screen bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+    <!--Center Screen-->
+    <div
+      class="bg-white opacity-85 p-8 w-[350px] md:w-[600px] lg:w-[800px] justify-center items-center rounded"
+    >
+      <!-- Title-->
+      <h1
+        class="uppercase font-bold text-center text-xl md:text-2xl lg:text-4xl bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text"
+      >
+        Todolist
+      </h1>
+      <!--Add Todo -->
+      <div class="container mx-auto flex relative justify-center">
+        <input
+          type="text"
+          id="todoInput"
+          placeholder="Todo Giriniz..."
+          class="w-[350px] md:w-[600px] lg:w-[800px] bg-transparent border-b border-black border-opacity-50 focus:outline-none transition duration-500 custom-placeholder placeholder:text-black"
+        />
+        <button onclick="addTodo()"
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ml-2"
+        >
+          <i class="fa-solid fa-plus"></i>
+        </button>
+    </div>
+    <!--Todos-->
+    <ul class="list-none mx-auto mt-5 space-y-5" id="todoList"></ul> 
+    <script src="script.js" ></script>
+  </body>
+</html>
