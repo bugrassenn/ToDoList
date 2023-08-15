@@ -93,5 +93,5 @@ function removeTodo(id) {
 
 function Info(id) {
   const todo = savedTodos.find((todo) => todo.id === id);
-  alert(todo.text);
+  alert(todo.date);
 }
