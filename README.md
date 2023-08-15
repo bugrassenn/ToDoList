@@ -1,4 +1,4 @@
-# TodoList_JavaScript
+# TodoList
 1 - Font Awesome Icons Kullanımı  
 2 - LocalStorage GET-SET Kullanımı  
 3 - Tailwind CSS  
